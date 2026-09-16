@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, Mail, Phone, MapPin, Shield, FileText, Sparkles, Heart } from 'lucide-react';
+import logo from "../../assets/logo.png";
 import { companyInfo } from '../../data/companyData';
 import { servicesData } from '../../data/servicesData';
 
@@ -24,20 +25,20 @@ export const Footer = ({ setActivePage, onOpenLegalModal }) => {
               }}
               className="flex items-center gap-3 cursor-pointer group"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 p-0.5 shadow-lg shadow-cyan-500/20">
+              <div className="flex items-center justify-center w-10 h-10 ">
                 <div className="w-full h-full bg-[#070A11] rounded-[10px] flex items-center justify-center">
-                  <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-xl">
-                    W
-                  </span>
+                  <div className="relative flex items-center justify-center w-10 h-10  transition-all duration-300">
+                               <img src={logo} alt="Wat'y AI Technologies"className="h-10 w-auto object-contain"/>
+                              </div>
                 </div>
               </div>
               <span className="font-extrabold text-2xl tracking-tight text-white group-hover:text-cyan-300 transition-colors">
-                WatY <span className="text-cyan-400">AI</span>
+                Wat'y <span className="text-cyan-400">AI</span>
               </span>
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              WatY AI Technologies is an enterprise technology solutions provider. We architect scalable web platforms, native mobile applications, cloud infrastructures, and automated AI systems for market leaders.
+              Wat'y Ai Technologies is an enterprise technology solutions provider. We architect scalable web platforms, native mobile applications, cloud infrastructures, and automated AI systems for market leaders.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-semibold">

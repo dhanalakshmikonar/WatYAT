@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Sparkles, ChevronRight } from 'lucide-react';
+import logo from "../../assets/logo.png";
 import { companyInfo } from '../../data/companyData';
 
 export const Navbar = ({ activePage, setActivePage, onOpenContactModal }) => {
@@ -43,17 +44,15 @@ export const Navbar = ({ activePage, setActivePage, onOpenContactModal }) => {
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 via-blue-600 to-indigo-700 p-0.5 shadow-lg shadow-cyan-500/25 group-hover:shadow-cyan-400/40 transition-all duration-300">
-              <div className="w-full h-full bg-[#0B0F17] rounded-[10px] flex items-center justify-center">
-                <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-xl tracking-wider">
-                  W
-                </span>
-              </div>
+            <div className="relative flex items-center justify-center w-10 h-10  transition-all duration-300">
+             <img src={logo} alt="Wat'y AI Technologies"className="h-10 w-auto object-contain"/>
             </div>
+
+
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
                 <span className="font-extrabold text-xl tracking-tight text-white group-hover:text-cyan-300 transition-colors">
-                  WatY <span className="text-cyan-400">AI</span>
+                  Wat'y <span className="text-cyan-400">AI</span>
                 </span>
                 <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
                   TECH
