@@ -22,7 +22,6 @@ export const companyInfo = {
   },
   socials: [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/company/watyai-technologies/posts/?feedView=all', icon: 'Linkedin' },
-    { name: 'Twitter / X', url: 'https://twitter.com/waty_ai', icon: 'Twitter' },
     { name: 'Instagram', url: 'https://www.instagram.com/waty_learning_hub/', icon: 'Instagram' },
     { name: 'YouTube', url: 'https://www.youtube.com/@watylearninghub', icon: 'Youtube' }
   ]
